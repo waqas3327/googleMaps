@@ -21,7 +21,7 @@ export class GeolocationPage implements OnInit, AfterViewInit {
       this.longitude = resp.coords.longitude;
       const map = new google.maps.Map(this.mapNativeElement.nativeElement, {
         center: {lat: -34.397, lng: 150.644},
-        zoom: 6
+        zoom: 18
       });
       const infoWindow = new google.maps.InfoWindow;
       const pos = {
@@ -33,7 +33,7 @@ export class GeolocationPage implements OnInit, AfterViewInit {
       infoWindow.open(map);
       map.setCenter(pos);
     }).catch((error) => {
-      console.log('Error getting location', error);
+      console.log('Error in getting the locations', error);
     });
   }
 

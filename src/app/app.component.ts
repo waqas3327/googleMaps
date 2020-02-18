@@ -16,8 +16,30 @@ export class AppComponent {
       icon: 'home'
     },
     {
+      title: 'Simple Map',
+      url: '/simple',
+      icon: 'list'
+    },
+    {
+      title: 'Geo Location',
+      url: '/geolocation',
+      icon: 'list'
+    },
+    {
       title: 'Custom Marker',
       url: '/marker',
+      icon: 'list'
+    }, {
+      title: 'Direction',
+      url: '/direction',
+      icon: 'list'
+    }, {
+      title: 'Direction with GeoLocation',
+      url: '/direction-geo',
+      icon: 'list'
+    }, {
+      title: 'Autocomplete',
+      url: '/autocomplete',
       icon: 'list'
     }
   ];
